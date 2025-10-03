@@ -131,7 +131,7 @@ def ioctl_decode(ioctl_code):
                 device_name = dev["name"]
                 break
 
-    print(f"winio_decode(0x{ioctl_code:08X})")
+    print(f"ioctl_decode(0x{ioctl_code:08X})")
     print(f"Device   : {device_name} (0x{device:04X})")
     print(f"Function : 0x{function:X}")
     print(f"Method   : {method_names[method]} ({method})")
